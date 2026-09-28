@@ -32,7 +32,7 @@ describe('ModelSelectorPanel', () => {
 
     act(() => triggers[0].dispatchEvent(new MouseEvent('mouseout', { bubbles: true })))
     act(() => triggers[1].dispatchEvent(new MouseEvent('mouseover', { bubbles: true })))
-    expect(document.body.textContent).toContain('gpt-5.6-sol\n旗舰级文本模型')
+    expect(document.body.textContent).toContain('gpt-5.6-sol\n上一代高性能文本模型')
 
     act(() => root.unmount())
   })
