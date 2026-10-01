@@ -36,7 +36,7 @@ export function applyTextModelPrefix(model: string): string {
   return DEFAULT_TEXT_MODEL_PREFIX ? `${DEFAULT_TEXT_MODEL_PREFIX}/${model}` : model
 }
 export const DEFAULT_RESPONSES_MODEL = applyTextModelPrefix('gpt-5.6-sol')
-export const TEXT_MODEL_VALUES = ['gpt-6-astra', 'gpt-6-sol', 'gpt-6-luna', 'gpt-5.6-sol', 'gpt-5.6-terra', 'gpt-5.6-luna'] as const
+export const TEXT_MODEL_VALUES = ['gpt-6-astra', 'gpt-6.1-sol', 'gpt-6-sol', 'gpt-6-luna', 'gpt-5.6-sol', 'gpt-5.6-terra', 'gpt-5.6-luna'] as const
 export const DEFAULT_TEXT_MODEL = 'gpt-5.6-sol'
 export const DEFAULT_FAL_BASE_URL = 'https://fal.run'
 export const DEFAULT_FAL_MODEL = 'openai/gpt-image-2'
